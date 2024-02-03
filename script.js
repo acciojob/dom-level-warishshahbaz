@@ -1,5 +1,6 @@
 //your JS code here. If required.
-const targetElement = document.getElementById("level");
+function getDOMLevel(elementId) {
+    const targetElement = document.getElementById(elementId);
 
     if (!targetElement) {
         console.error(`Element with id "${elementId}" not found.`);
@@ -14,5 +15,7 @@ const targetElement = document.getElementById("level");
         currentElement = currentElement.parentNode;
         domLevel++;
     }
-alert(domLevel)
-    
+
+    alert(domLevel) ;
+}
+    getDOMLevel("level")
